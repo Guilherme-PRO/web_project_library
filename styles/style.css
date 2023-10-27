@@ -28,8 +28,7 @@
 
 .nav__logo {
   margin: 0;
-  height: 57px;
-  width: 80px;
+  height: 60px;
 }
 
 .nav__links {
@@ -48,8 +47,8 @@
 
 .header__title {
   max-width: 601px;
-  font-size: 60px;
-  line-height: 75px;
+  font-size: 66px;
+  line-height: 76px;
   font-weight: 500;
 }
 
