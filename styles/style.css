@@ -226,9 +226,12 @@
   font-size: 14px;
   margin: 0;
 }
-
 .staff {
   padding: 100px 0 140px;
+  display: block;
+  padding: 100px 0 140px;
+  background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
 }
 
 .staff__title {
@@ -249,8 +252,11 @@
 /* adicionar a regra CSS para sua nova classe aqui. Certifique-se de colocar antes de .card: os pais devem preceder seus filhos */
 .staff__card {
   max-width: 760px;
-  margin: 0 auto;
+  margin: 68px auto auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .card {
@@ -258,8 +264,9 @@
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
-  width: 420px;
-  height: 760px;
+  width: 360px;
+  height: 420px;
+  list-style-type: none;
 }
 
 .card__content {
@@ -283,10 +290,11 @@
 }
 
 .card__footer {
-  margin: 0;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 20px;
   color: #838383;
+  margin-top: auto;
 }
 
 .membership {
@@ -308,10 +316,15 @@
   padding: 0;
   margin: 100px 0 0;
   /* Adicione estilos */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
   /* Adicione estilos */
+  flex-basis: 220px;
 }
 
 .step__title {
