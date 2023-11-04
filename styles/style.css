@@ -425,7 +425,7 @@
   justify-content: space-between;
 }
 .footer__column_logo {
-  margin-top: 0 auto;
+  margin-top: 0;
   width: 57px;
   height: 80px;
 }
@@ -455,7 +455,7 @@
   margin-left: 16px;
 }
 .footer__logo {
-  margin-top: 0 auto;
+  margin-top: 0;
   width: 57px;
   height: 80px;
   display: flex;
