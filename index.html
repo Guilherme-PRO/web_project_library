@@ -22,19 +22,23 @@
           <!-- Colocar links de navegação em uma lista é considerada a melhor prática para escrever códigos semânticos, porque permite que leitores de tela façam uma pausa entre cada link em vez de ler todos como se fossem uma só frase. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Escolhas da Equipe</a>
+              <a class="nav__link nav__link:hover" href="#escolhas-da-equipe"
+                >Escolhas da Equipe</a
+              >
             </li>
             <li>
-              <a class="nav__link">Eventos</a>
+              <a class="nav__link nav__link:hover" href="#eventos">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Seja um membro</a>
+              <a class="nav__link nav__link:hover" href="#seja-um-membro"
+                >Seja um membro</a
+              >
             </li>
             <li>
-              <a class="nav__link">Sobre</a>
+              <a class="nav__link nav__link:hover" href="#sobre">Sobre</a>
             </li>
             <li>
-              <a class="nav__link">Contatos</a>
+              <a class="nav__link nav__link:hover" href="#contatos">Contatos</a>
             </li>
           </ul>
         </nav>
@@ -54,7 +58,9 @@
           class="header__image"
         />
         <div class="header__footer">
-          <a class="header__link">Sobre a biblioteca &darr;</a>
+          <a class="header__link nav__link:hover" href="#sobre"
+            >Sobre a biblioteca &darr;</a
+          >
           <p class="header__address">
             200 Success Avenue, The Town of Triple Peaks
           </p>
@@ -62,7 +68,7 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section class="events" id="eventos">
           <!-- --------------------------------------------------------------- -->
           <!--    Não apague os comentários até a segunda etapa do projeto     -->
           <!-- --------------------------------------------------------------- -->
@@ -147,7 +153,7 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section class="staff" id="escolhas-da-equipe">
           <!-- --------------------------------------------------------------- -->
           <!--   Não apague os comentários até a última etapa do projeto       -->
           <!-- --------------------------------------------------------------- -->
@@ -224,7 +230,7 @@
             </li>
           </ul>
         </section>
-        <section class="membership">
+        <section class="membership" id="seja-um-membro">
           <!-- --------------------------------------------------------------- -->
           <!--   Não apague os comentários até a última etapa do projeto       -->
           <!-- --------------------------------------------------------------- -->
@@ -283,29 +289,89 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section class="about" id="sobre">
           <!-- --------------------------------------------------------------- -->
           <!--      Não apague os comentários até a última etapa do projeto    -->
           <!-- --------------------------------------------------------------- -->
-          <<h2 class="about__title">Sobre a biblioteca</h2>
-        <div class="about__content">
-          <p class="about__paragraph">
-            As bibliotecas são essenciais em qualquer cidade, e a Biblioteca Triple Peaks não é exceção. Ele abriu suas portas pela primeira vez em 2018, assim que nossa humilde cidade começou a dar as boas-vindas aos seus primeiros cidadãos!
-          </p>
-          <p class="about__paragraph">
-            Desde sua abertura inicial, a biblioteca vem recebendo cerca de 342 visitantes mensais. É quase 50% da nossa população! Até o momento, a maioria da população tem gostado de fazer leituras de nossos livros e usar nossos amplos recursos on-line.
-          </p>
-          <p class="about__paragraph">
-            Torne-se um membro hoje e certifique-se de verificar nossa seção de escolhas da equipe. A seleção dessa semana está repleta de livros que qualquer pessoa interessada em programação adoraria conhecer!
-          </p>
-        </div>
-        <div class="about__circle"></div> 
+          <h2 class="about__title">Sobre a biblioteca</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              As bibliotecas são essenciais em qualquer cidade, e a Biblioteca
+              Triple Peaks não é exceção. Ele abriu suas portas pela primeira
+              vez em 2018, assim que nossa humilde cidade começou a dar as
+              boas-vindas aos seus primeiros cidadãos!
+            </p>
+            <p class="about__paragraph">
+              Desde sua abertura inicial, a biblioteca vem recebendo cerca de
+              342 visitantes mensais. É quase 50% da nossa população! Até o
+              momento, a maioria da população tem gostado de fazer leituras de
+              nossos livros e usar nossos amplos recursos on-line.
+            </p>
+            <p class="about__paragraph">
+              Torne-se um membro hoje e certifique-se de verificar nossa seção
+              de escolhas da equipe. A seleção dessa semana está repleta de
+              livros que qualquer pessoa interessada em programação adoraria
+              conhecer!
+            </p>
+          </div>
+          <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="contatos">
         <!-- ----------------------------------------------------------------- -->
         <!--      Não apague os comentários até a última etapa do projeto      -->
         <!-- ----------------------------------------------------------------- -->
+        <div class="footer__columns">
+          <div class="footer__column_logo">
+            <img
+              src="./images/logo-white.svg"
+              href="logo"
+              class="footer__logo"
+            />
+          </div>
+          <div class="footer__copyright"><p>&copy;2023 Guilherme</p></div>
+          <div class="footer__column">
+            <div class="footer__column_content_hours">
+              <h5 class="footer__column-heading">Horário de Funcionamento</h5>
+              <ul class="footer__list">
+                <li class="footer__list-item">dias úteis: 9h - 20h</li>
+
+                <li class="footer__list-item">Finais de semana: 10h dás 18h</li>
+              </ul>
+            </div>
+            <div class="footer__column_content_social">
+              <h5 class="footer__columnheading">Rede sociais</h5>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a
+                    class="footer__column-link"
+                    href="https://www.facebook.com/GuilhermeCarrij0"
+                    target="_blank"
+                  >
+                    <img
+                      src="images/facebook_white.svg"
+                      alt="icon-facebook"
+                      class="footer__social-icon"
+                    />facebook</a
+                  >
+                </li>
+                <li class="footer__list-item">
+                  <a
+                    class="footer__column-link"
+                    href="https://instagram.com/guilherme_carrijo_?igshid=NGVhN2U2NjQ0Yg=="
+                    target="_blank"
+                  >
+                    <img
+                      src="./images/instagram_white.svg"
+                      alt="icone-instagram"
+                      class="footer__social-icon"
+                    />instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
